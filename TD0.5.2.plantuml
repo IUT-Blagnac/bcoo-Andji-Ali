@@ -6,9 +6,12 @@ hide circle
 hide empty members
 hide empty methods
 '--------------------------------
+class Point{
+}
 
 class Ligne{
-Point A
-Point B
 }
+
+Ligne "0..*" -- "2" Point
+
 @enduml
