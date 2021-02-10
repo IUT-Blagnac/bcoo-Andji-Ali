@@ -6,9 +6,9 @@ hide circle
 hide empty members
 hide empty methods
 '--------------------------------
-class "Ordinateur portable"{
+
+class "Ordinateur"{
 clavier
-prix d'achat
 valeur actuelle
 }
 
@@ -22,8 +22,14 @@ class Proprietaire{
     Prénom
 }
 
-"Ordinateur portable" "1" - "1" Clavier
-"Ordinateur portable" "1 " --- "1 " Proprietaire
+Ordinateur "1" - "1" Clavier
+Ordinateur "1 " --- "1 " Proprietaire
 
+(Ordinateur, Clavier) . Posséder
+(Ordinateur, Proprietaire) . Acheter
+
+class Acheter {
+    prix d'achat
+}
 
 @enduml
