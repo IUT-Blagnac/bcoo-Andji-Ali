@@ -1,0 +1,29 @@
+@startuml Ordinateurs portables
+'--------------------------------
+' Parametres pour le dessin
+'--------------------------------
+hide circle
+hide empty members
+hide empty methods
+'--------------------------------
+class "Ordinateur portable"{
+clavier
+prix d'achat
+valeur actuelle
+}
+
+class Clavier{
+    azerty ou qwerty
+    touches
+}
+
+class Proprietaire{
+    Nom
+    Prénom
+}
+
+"Ordinateur portable" "1" - "1" Clavier
+"Ordinateur portable" "1 " --- "1 " Proprietaire
+
+
+@enduml
